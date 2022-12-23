@@ -3,6 +3,7 @@ from PIL import Image, ImageFilter
 from docx import Document
 
 # To take care of possible unrecognized characters
+# else we get a valueerror
 def valid_xml_char_ordinal(c):
     codepoint = ord(c)
     return (
